@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Walk Route Generator</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_schedule">Schedule</string>
+    <string name="menu_friend_list">Friend list</string>
+    <string name="menu_group_list">Group list</string>
+    <string name="menu_scoreboard">Scoreboard</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="label_route">Route</string>
+    <string name="label_create_schedule">Create schedule</string>
+
+    <string name="button_generate_route">Generate walk route</string>
+    <string name="button_create_schedule">Create a schedule</string>
 </resources>
