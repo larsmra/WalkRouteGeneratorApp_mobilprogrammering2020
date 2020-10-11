@@ -10,8 +10,8 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_schedule">Schedule</string>
-    <string name="menu_friend_list">Friend list</string>
-    <string name="menu_group_list">Group list</string>
+    <string name="menu_friend_list">Friends</string>
+    <string name="menu_group_list">Groups</string>
     <string name="menu_scoreboard">Scoreboard</string>
     <string name="menu_profile">Profile</string>
 
@@ -20,4 +20,24 @@
 
     <string name="button_generate_route">Generate walk route</string>
     <string name="button_create_schedule">Create a schedule</string>
+
+    <string name="text_title">Title</string>
+    <string name="text_time">Time</string>
+    <string name="text_days">Days</string>
+    <string name="text_length">Length</string>
+
+    <string name="button_monday">M</string>
+    <string name="button_tuesday">T</string>
+    <string name="button_wednesday">W</string>
+    <string name="button_thursday">T</string>
+    <string name="button_friday">F</string>
+    <string name="button_saturday">S</string>
+    <string name="button_sunday">S</string>
+
+    <string name="button_text_save">Save</string>
+
+    <string-array name="walkRouteLengthOptions">
+        <item>Hours</item>
+        <item>Kilometers</item>
+    </string-array>
 </resources>

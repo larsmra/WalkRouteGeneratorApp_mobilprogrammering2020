@@ -6,4 +6,192 @@
     android:layout_height="match_parent"
     tools:context=".CreateScheduleActivity">
 
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/text_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/text_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTime" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/button_monday"
+        android:textOff="@string/button_monday"
+        android:textOn="@string/button_monday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:text="@string/button_tuesday"
+        android:textOff="@string/button_tuesday"
+        android:textOn="@string/button_tuesday"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:text="@string/button_wednesday"
+        android:textOff="@string/button_wednesday"
+        android:textOn="@string/button_wednesday"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton4"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:text="@string/button_thursday"
+        android:textOff="@string/button_thursday"
+        android:textOn="@string/button_thursday"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:text="@string/button_friday"
+        android:textOff="@string/button_friday"
+        android:textOn="@string/button_friday"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton6"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:text="@string/button_saturday"
+        android:textOff="@string/button_saturday"
+        android:textOn="@string/button_saturday"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton7"
+        android:layout_width="50dp"
+        android:layout_height="58dp"
+        android:text="@string/button_sunday"
+        android:textOff="@string/button_sunday"
+        android:textOn="@string/button_sunday"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton6"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/text_length"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="24dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/button_text_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:entries="@array/walkRouteLengthOptions"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etLength"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
