@@ -40,4 +40,8 @@
         <item>Hours</item>
         <item>Kilometers</item>
     </string-array>
+
+    <string name="title_activity_walk_route">Walk Route Generator</string>
+    <string name="log_out">Log out</string>
+
 </resources>
