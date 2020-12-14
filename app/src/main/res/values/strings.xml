@@ -10,7 +10,7 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_schedule">Schedule</string>
-    <string name="menu_friend_list">Friends</string>
+    <string name="menu_friend_list">Users</string>
     <string name="menu_group_list">Groups</string>
     <string name="menu_scoreboard">Scoreboard</string>
     <string name="menu_profile">Profile</string>

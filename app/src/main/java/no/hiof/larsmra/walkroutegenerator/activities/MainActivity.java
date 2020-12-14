@@ -31,14 +31,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 
 import no.hiof.larsmra.walkroutegenerator.R;
-import no.hiof.larsmra.walkroutegenerator.models.Group;
-import no.hiof.larsmra.walkroutegenerator.models.Schedule;
 import no.hiof.larsmra.walkroutegenerator.models.User;
 
 public class MainActivity extends AppCompatActivity {
