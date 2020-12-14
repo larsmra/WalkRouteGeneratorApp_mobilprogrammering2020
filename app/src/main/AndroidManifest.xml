@@ -17,7 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".activities.CreateGroupActivity"></activity>
+        <activity
+            android:name=".activities.UserProfileActivity"
+            android:label="@string/label_user"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.GroupActivity"
+            android:label="@string/label_group"
+            android:parentActivityName=".activities.MainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -29,21 +37,20 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".WalkRouteActivity"
+            android:name=".activities.WalkRouteActivity"
             android:label="@string/title_activity_walk_route"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
         <activity
-            android:name=".CreateScheduleActivity"
+            android:name=".activities.CreateScheduleActivity"
             android:label="@string/label_create_schedule"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".activities.MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

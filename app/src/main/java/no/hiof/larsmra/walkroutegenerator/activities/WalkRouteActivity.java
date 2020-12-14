@@ -1,4 +1,4 @@
-package no.hiof.larsmra.walkroutegenerator;
+package no.hiof.larsmra.walkroutegenerator.activities;
 
 import androidx.fragment.app.FragmentActivity;
 
@@ -14,7 +14,11 @@ import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 
+import no.hiof.larsmra.walkroutegenerator.R;
+
 public class WalkRouteActivity extends FragmentActivity implements OnMapReadyCallback, GoogleMap.OnPolylineClickListener, GoogleMap.OnPolygonClickListener {
+
+    private static final String TAG = "WalkRouteActivity";
 
     private GoogleMap mMap;
     private LatLng start;
@@ -27,26 +31,26 @@ public class WalkRouteActivity extends FragmentActivity implements OnMapReadyCal
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_walk_route);
 
-        setDummyData();
+        generateRoute();
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        }
     }
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
+    private void generateRoute() {
+        start = new LatLng(59.1292658, 11.3524027);
+        double lat = start.latitude;
+        double lng = start.longitude;
+
+
+    }
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        Log.d("ABC", "Maps test");
+        Log.d(TAG, "onMapReady: called.");
         mMap = googleMap;
 
         mMap.getUiSettings().setCompassEnabled(true);

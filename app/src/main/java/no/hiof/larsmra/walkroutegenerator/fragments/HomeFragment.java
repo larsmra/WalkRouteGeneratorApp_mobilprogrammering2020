@@ -1,4 +1,4 @@
-package no.hiof.larsmra.walkroutegenerator.ui.home;
+package no.hiof.larsmra.walkroutegenerator.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,24 +13,23 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
-import no.hiof.larsmra.walkroutegenerator.CreateScheduleActivity;
+import no.hiof.larsmra.walkroutegenerator.activities.CreateScheduleActivity;
 import no.hiof.larsmra.walkroutegenerator.R;
-import no.hiof.larsmra.walkroutegenerator.WalkRouteActivity;
+import no.hiof.larsmra.walkroutegenerator.activities.WalkRouteActivity;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private static final String TAG = "HomeFragment";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.home_fragment, container, false);
 
         final Button generateWalkRouteButton = (Button)root.findViewById(R.id.generate_route_button);
         generateWalkRouteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("TEST", "Generate route");
+                Log.d(TAG, "Generate route");
                 Intent intent = new Intent(getActivity(), WalkRouteActivity.class);
                 startActivity(intent);
             }
@@ -40,7 +39,7 @@ public class HomeFragment extends Fragment {
         createScheduleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("TEST", "Create schedule");
+                Log.d(TAG, "Create schedule");
                 Intent intent = new Intent(getActivity(), CreateScheduleActivity.class);
                 startActivity(intent);
             }

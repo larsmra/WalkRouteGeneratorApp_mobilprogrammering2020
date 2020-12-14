@@ -7,37 +7,37 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="no.hiof.larsmra.walkroutegenerator.ui.home.HomeFragment"
+        android:name="no.hiof.larsmra.walkroutegenerator.fragments.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/home_fragment" />
 
     <fragment
         android:id="@+id/nav_schedule"
-        android:name="no.hiof.larsmra.walkroutegenerator.ui.schedule.ScheduleFragment"
+        android:name="no.hiof.larsmra.walkroutegenerator.fragments.ScheduleFragment"
         android:label="@string/menu_schedule"
         tools:layout="@layout/schedule_fragment" />
 
     <fragment
         android:id="@+id/nav_friend_list"
-        android:name="no.hiof.larsmra.walkroutegenerator.ui.friendlist.FriendListFragment"
+        android:name="no.hiof.larsmra.walkroutegenerator.fragments.FriendListFragment"
         android:label="@string/menu_friend_list"
         tools:layout="@layout/friend_list_fragment" />
 
     <fragment
         android:id="@+id/nav_group_list"
-        android:name="no.hiof.larsmra.walkroutegenerator.ui.grouplist.GroupListFragment"
+        android:name="no.hiof.larsmra.walkroutegenerator.fragments.GroupListFragment"
         android:label="@string/menu_group_list"
         tools:layout="@layout/group_list_fragment" />
 
     <fragment
         android:id="@+id/nav_scoreboard"
-        android:name="no.hiof.larsmra.walkroutegenerator.ui.scoreboard.ScoreboardFragment"
+        android:name="no.hiof.larsmra.walkroutegenerator.fragments.ScoreboardFragment"
         android:label="@string/menu_scoreboard"
         tools:layout="@layout/scoreboard_fragment" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="no.hiof.larsmra.walkroutegenerator.ui.profile.ProfileFragment"
+        android:name="no.hiof.larsmra.walkroutegenerator.fragments.ProfileFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/profile_fragment" />
 </navigation>

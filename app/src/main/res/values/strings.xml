@@ -17,14 +17,24 @@
 
     <string name="label_route">Route</string>
     <string name="label_create_schedule">Create schedule</string>
+    <string name="label_group">Group</string>
+    <string name="label_user">User</string>
+    <string name="label_title">Title</string>
+    <string name="label_time">Time</string>
+    <string name="label_days">Days</string>
+    <string name="label_add_friend">Add a friend</string>
+    <string name="label_ignore_request">Ignore</string>
+    <string name="label_accept_request">Accept</string>
+    <string name="label_your_requests">Your friend requests</string>
+    <string name="label_your_friends">Your friends</string>
+    <string name="label_groups">Groups</string>
+    <string name="label_join_group">Join</string>
 
     <string name="button_generate_route">Generate walk route</string>
     <string name="button_create_schedule">Create a schedule</string>
 
-    <string name="text_title">Title</string>
-    <string name="text_time">Time</string>
-    <string name="text_days">Days</string>
-    <string name="text_length">Length</string>
+    <string name="group_name">Name</string>
+    <string name="group_description">Description</string>
 
     <string name="button_monday">M</string>
     <string name="button_tuesday">T</string>
@@ -34,7 +44,9 @@
     <string name="button_saturday">S</string>
     <string name="button_sunday">S</string>
 
+    <string name="button_text_cancel">Cancel</string>
     <string name="button_text_save">Save</string>
+    <string name="button_text_send">Send</string>
 
     <string-array name="walkRouteLengthOptions">
         <item>Hours</item>
